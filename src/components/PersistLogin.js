@@ -20,9 +20,8 @@ const PersistLogin = () => {
             }
         }
         !auth && verifyRefreshToken(); 
-
-        return () => isMounted = false;
     }, [Navigate, auth, location, refresh]);
+
     useEffect(() => {
         console.log("persistlogin refresh");
     }, []);
