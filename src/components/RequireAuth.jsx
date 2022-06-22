@@ -1,27 +1,16 @@
-import {useEffect} from "react";
-import { useNavigate, Outlet } from "react-router-dom";
+import { Outlet, Navigate } from "react-router-dom";
 import { useSelector } from "react-redux";  
 
 const RequireAuth = ({ allowedRoles }) => {
-    const { currentUser } = useSelector((state) => state.user);
-    const Navigate = useNavigate();
+    const { currentUser } = useSelector((state) => state.auth);
 
     let isRole = currentUser?.roles?.some(x => allowedRoles?.includes(x));
-    //const location = useLocation();
-    if (!isRole) {
-      Navigate("unauthorized", { replace: true });
-    }
-    // if (!auth)  {
-    //   return <Navigate to="/home" replace state={{ from: location }} />;
-    // }
-    useEffect(() => {
-       console.log("require ran");
-    }, []);
+   
 
     return (
-      <>
-        { isRole && <Outlet /> }
-      </>
+      isRole
+      ? <Outlet />
+      : <Navigate to="/unauthorized" replace />
     )
 }
 export default RequireAuth;

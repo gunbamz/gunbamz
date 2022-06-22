@@ -1,14 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
-import "./ChatSearch.css";
 
 const ChatSearch = () => {
-  //const Navigate = useNavigate();
-
-  // const handleClick = async (e) => {
-  //   e.preventDefault();
-  // };
 
   const { onlineUsers }  = useSelector((state) => state.message);
   return (

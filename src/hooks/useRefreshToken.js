@@ -9,8 +9,6 @@ const useRefreshToken = () => {
         try {
             const res = await refreshRequest.get('/auth/refresh');
             dispatch(apiRefreshSuccess(res.data));
-            //console.log("use refresh try ran");
-            //console.log(res);
             return res.data.accessToken;
         }
         catch (err) {

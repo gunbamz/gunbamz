@@ -6,7 +6,7 @@ import Register from "./pages/Register";
 import HeaderBar from "./components/HeaderBar";
 import FooterBar from "./components/FooterBar";
 import RequireAuth from "./components/RequireAuth";
-import PanelPage from "./pages/PanelPage";
+import PanelPage from "./features/users/PanelPage";
 import Records from "./pages/Records";
 import Pharmacy from "./pages/Pharmacy";
 import Appointment from "./pages/Appointment";
@@ -18,10 +18,9 @@ import Laboratory from "./pages/Laboratory";
 import Store from "./pages/Store";
 import Accounting from "./pages/Accounting";
 import Analytics from "./pages/Analytics";
-//import NoMatch from "./pages/NoMatch";
-import Login from "./pages/Login";
+import Login from "./features/auth/Login";
 import Logout from "./pages/Logout";
-import Profiles from "./pages/Profiles";
+import Profiles from "./features/users/PanelPage";
 import User from "./pages/User";
 import "./App.css";
 import { 
@@ -35,10 +34,6 @@ import { useSelector } from "react-redux";
 const App = () => {
   const { auth }  = useSelector((state) => state.user);
   const { currentMode }  = useSelector((state) => state.mode);
-  //const location = useLocation();
-  //const from = location.state?.from || "/";
-  //const prevLocation = location.state?.from || "/";
-  //console.log(location);
   useEffect(() => {
     console.log('location');
     }, []);   

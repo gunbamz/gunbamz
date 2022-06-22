@@ -1,40 +1,22 @@
-import { configureStore, combineReducers } from "@reduxjs/toolkit";
-import logger from "redux-logger";
+import { configureStore } from "@reduxjs/toolkit";
+//import logger from "redux-logger";
 //import cartReducer from "./cartRedux";
-import userReducer from "./userRedux";
-import messageReducer from "./messageRedux";
+import { apiSlice } from "./apiSlice";
+import userReducer from "../features/users/userSlice";
+import authReducer from "../features/auth/authSlice";
+import messageReducer from "../features/messages/messageSlice";
 import modeReducer from "./modeRedux";
-// import {
-//   persistStore,
-//   persistReducer,
-//   FLUSH,
-//   REHYDRATE,
-//   PAUSE,
-//   PERSIST,
-//   PURGE,
-//   REGISTER,
-// } from "redux-persist";
-//import storage from "redux-persist/lib/storage";
 
-// const persistConfig = {
-//   key: "root",
-//   version: 1,
-//   storage,
-// };
-
-const rootReducer = combineReducers({ user: userReducer, mode: modeReducer, message: messageReducer });
-
-//const persistedReducer = persistReducer(persistConfig, rootReducer);
+//const rootReducer = combineReducers({ user: userReducer, mode: modeReducer, message: messageReducer });
 
 export const store = configureStore({
-  reducer: rootReducer,
-  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
+  reducer: { 
+    [apiSlice.reducerPath]: apiSlice.reducer,
+    auth: authReducer,
+    user: userReducer,
+    mode: modeReducer,
+    message: messageReducer
+  },
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(apiSlice.middleware),
+  devTools: true
 });
-// middleware: (getDefaultMiddleware) =>
-//     getDefaultMiddleware({
-//       serializableCheck: {
-//         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
-//       },
-//     }),
-
-//export let persistor = persistStore(store);

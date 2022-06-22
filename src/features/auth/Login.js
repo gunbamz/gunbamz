@@ -1,4 +1,4 @@
-import { useState, useEffect }from "react";
+import { useState }from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { setCredentials } from './authSlice';
@@ -9,8 +9,8 @@ const Login = () => {
     const dispatch = useDispatch();
     const Navigate = useNavigate();
     const [formData, setFormData] = useState({});
-    const [login, { isLoading }] = useLoginMutation()
-
+    const [login, { isLoading }] = useLoginMutation();
+    console.log(isLoading);
     const handleInputChange = (e) => {
         const target = e.target;
         const value = target.type === 'checkbox' ? target.checked : target.value;
@@ -23,16 +23,17 @@ const Login = () => {
     const handleLogin = async (e) => {
         e.preventDefault();
         try { 
-            setIsSending(true);
-           // const res = await publicRequest.post("/auth/login", formData);
             const res = await login(formData).unwrap();
-            dispatch(setCredentials(res.data));
+            dispatch(setCredentials(res));
             Navigate("/panel/newpatients", { replace: true });
           } catch (err) {
             console.log(err);
         } 
-        setIsSending(false);
     };
+
+    // useEffect(() => {
+    //     dispatch(logOut()); 
+    // }, [dispatch]);
 
     return (
         <div className="login__container">
@@ -49,7 +50,7 @@ const Login = () => {
                     </div>
                 </div>
                 <div className="button__wrapper">
-                    <button className='button' disabled={isSending} type="submit">Login</button>
+                    <button className='button' type="submit">Login</button>
                 </div>
             </form>
     </div>

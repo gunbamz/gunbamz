@@ -12,32 +12,32 @@ const messageSlice = createSlice({
     onlineUsers: [],
   },
   reducers: {
-    arrivalMessage: (state, action) => {
+    setArrival: (state, action) => {
       state.arrivalMessage = action.payload;
     },
-    receiverMessage: (state, action) => {
+    setReceiver: (state, action) => {
        state.messages = action.payload;
     },
-    senderCounter: (state, action) => {
+    setCounter: (state, action) => {
       state.senderCounter += action.payload;
    },
-    senderMessage: (state, action) => {
+    setSenderMessage: (state, action) => {
        state.messages = action.payload;
     },
-    newMessage: (state, action) => {
+    setNewMessage: (state, action) => {
        state.newMessage = action.payload;
     },
-    onlineUsers: (state, action) => {
+    setOnlineUsers: (state, action) => {
       state.onlineUsers = action.payload;
     },
-    conversations: (state, action) => {
+    setConversations: (state, action) => {
       state.conversations = action.payload;
     },
-    currentChat: (state, action) => {
+    setCurrentChat: (state, action) => {
       state.currentChat = action.payload;
     },
   },
 });
 
-export const {  currentChat, arrivalMessage, senderCounter, newMessage, receiverMessage, senderMessage, conversations, onlineUsers } = messageSlice.actions;
+export const {  setCurrentChat, setArrival, setCounter, setNewMessage, setReceiver, setSenderMessage, setConversations, setOnlineUsers } = messageSlice.actions;
 export default messageSlice.reducer;

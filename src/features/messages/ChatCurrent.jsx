@@ -1,16 +1,14 @@
 import { useEffect, useRef, useState } from "react";
-//import { userRequest } from "../requestMethods";
-import useAxiosPrivate from "../hooks/useAxiosPrivate";
 import { useLocation } from "react-router-dom";
+import { useMessageMutation } from './messageApiSlice';
 import { useSelector, useDispatch } from "react-redux";
 import Message from "./Message";
-import "./ChatCurrent.css";
-import { senderMessageSuccess, senderCounterSuccess, newMessageSuccess, currentChatSuccess } from "../redux/messageRedux";
+import { setSenderMessage, setCounter, setNewMessage, setCurrentChat } from "./messageSlice";
 
 
 const ChatCurrent = () => {
-  const axiosPrivate = useAxiosPrivate();
-  //const Navigate = useNavigate;
+  const [getMessages, getTwoConversation, createConversation, { isLoading }] = useMessageMutation();
+  console.log(isLoading);
   const scrollRef = useRef();
   const location = useLocation();
   const [text, setText] = useState("");
@@ -20,8 +18,8 @@ const ChatCurrent = () => {
 
   const handleSend = async (e) => {
     e.preventDefault();
-    dispatch(newMessageSuccess(text));
-    dispatch(senderCounterSuccess(1));
+    dispatch(setNewMessage(text));
+    dispatch(setCounter(1));
     setText("");
   };
   const handleNav = (e) => {
@@ -33,59 +31,45 @@ const ChatCurrent = () => {
       const onlineUserObj = location.state?.chatSearch;
       const conversationObj = location.state?.chatRecent;
       let isMounted = true;
-      const controller = new AbortController();
-      const createConversation = async () => {
+      const createConv = async () => {
           try {
-              const res = await axiosPrivate.post("/conversations", {
-                data: {
-                  senderId: currentUser._id,
-                  receiverId: onlineUserObj._id
-                },
-                signal: controller.signal
-              });
+            const res = await createConversation({ senderId: currentUser._id, receiverId: onlineUserObj._id}).unwrap();
               isMounted && dispatch(
-                currentChatSuccess(res.data)
+                setCurrentChat(res.data)
               );
             } catch (err) {
                 console.log(err.response);
-                //Navigate("/login", { replace: true });
             }
       }
-      const getTwoConversation = async () => {
+      const getTwoConv = async () => {
         try {
-            const res = await axiosPrivate.get(`/conversations/find/${conversationObj.members[0]}/${conversationObj.members[1]}`, {
-              signal: controller.signal
-            });
+          const res = await getTwoConversation(`${conversationObj.members[0]}/${conversationObj.members[1]}`).unwrap();
             isMounted && dispatch(
-              currentChatSuccess(res.data)
+              setCurrentChat(res.data)
             );
           } catch (err) {
               console.log(err.response);
-              //Navigate("/login", { replace: true });
           }
       }
-      const getMessages = async () => {
+      const getMes = async () => {
         try {
-            const res = await axiosPrivate.get("/messages/" + conversationObj._id, {
-                signal: controller.signal
-            });
+          const res = await getMessages(conversationObj._id).unwrap();
             isMounted && dispatch(
-              senderMessageSuccess(res.data)
+              setSenderMessage(res.data)
             );
         } catch (err) {
             console.log(err.response);
-            //Navigate("/login", {  replace: true });
         }
       }
-      onlineUserObj && createConversation(); 
-      conversationObj && getTwoConversation(); 
-      conversationObj && getMessages();
+      onlineUserObj && createConv(); 
+      conversationObj && getTwoConv(); 
+      conversationObj && getMes();
   
       return () => {
           isMounted = false;
-          controller.abort();
       }
-  }, [axiosPrivate, currentUser._id, dispatch, location]);
+      
+  }, [createConversation, getMessages, getTwoConversation, currentUser._id, dispatch, location]);
 
   useEffect(() => {
     scrollRef.current?.scrollIntoView({ behavior: "smooth" });

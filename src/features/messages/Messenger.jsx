@@ -1,22 +1,22 @@
 import { useCallback, useEffect, useRef } from "react";
-import useAxiosPrivate from "../hooks/useAxiosPrivate";
 import { Routes, Route, NavLink } from "react-router-dom";
 import ChatSearch from "./ChatSearch";
 import ChatCurrent from "./ChatCurrent";
 import ChatRecent from "./ChatRecent"; 
 import { io } from "socket.io-client";
+import { useMessageMutation } from './messageApiSlice';
 import "./Messenger.css";
 import { useDispatch, useSelector } from "react-redux";
-import { setMessenger } from "../redux/modeRedux";
-import { newMessageSuccess, onlineUsersSuccess, conversationsSuccess, receiverMessageSuccess, arrivalMessageSuccess } from "../redux/messageRedux";
+import { setMessenger } from "../../redux/modeRedux";
+import { setNewMessage, setOnlineUsers, setConversations, setReceiver, setArrival } from "./messageSlice";
 
 const Messenger = () => {
-  const axiosPrivate = useAxiosPrivate();
     const dispatch = useDispatch();
-    const { currentUser, users }  = useSelector((state) => state.user);
+    const { currentUser, users } = useSelector((state) => state.user);
     const { arrivalMessage, senderCounter, currentChat, newMessage, messages }  = useSelector((state) => state.message);
     const socket = useRef();
-
+    const [sendMessage, getConversations, { isLoading }] = useMessageMutation();
+    console.log(isLoading);
     const handleSubmit = useCallback(
       async (e) => {
         const message = {
@@ -24,25 +24,24 @@ const Messenger = () => {
           text: newMessage,
           conversationId: currentChat?._id,
         };
-    
+        
         const receiverId = currentChat?.members.find(
           (member) => member !== currentUser._id
         );
         try {
-          const res = await axiosPrivate.post("/messages", message);
-          console.log(res.data);
-          dispatch(arrivalMessageSuccess(res.data));
+          const res = await sendMessage(message).unwrap();
+          dispatch(setArrival(res.data));
           socket.current.emit("sendMessage", {
             senderId: currentUser._id,
             receiverId,
             text: newMessage,
           });
-          dispatch(newMessageSuccess(""));
+          dispatch(setNewMessage(""));
         } catch (err) {
           console.log(err);
         }
       },
-      [axiosPrivate, currentChat, currentUser, newMessage, dispatch]
+      [currentChat, currentUser, sendMessage, newMessage, dispatch]
     );
   
     useEffect(() => {
@@ -52,11 +51,11 @@ const Messenger = () => {
       socket.current.emit("addUser", currentUser._id);
       socket.current.on("getUsers", (socUser) => {
         let temp =  users.filter((f) => socUser.some((u) => u.userId === f._id));
-        dispatch(onlineUsersSuccess(temp));
+        dispatch(setOnlineUsers(temp));
       });
       socket.current.on("getMessage", (data) => {
         console.log("getmessag");
-        dispatch(arrivalMessageSuccess({
+        dispatch(setArrival({
           sender: data.senderId,
           text: data.text,
           createdAt: Date.now(),
@@ -72,27 +71,23 @@ const Messenger = () => {
 
     useEffect(() => {
       let isMounted = true;
-      const controller = new AbortController();
-      const getConversations = async () => {
+      const getConv = async () => {
           try {
-              const res = await axiosPrivate.get("/conversations/" + currentUser._id, {
-                  signal: controller.signal
-              });
+            const res = await getConversations(currentUser._id).unwrap();
               isMounted && dispatch(
-                conversationsSuccess(res.data)
+                setConversations(res.data)
               );
             } catch (err) {
                 console.log(err.response);
                 //Navigate("/login", { replace: true });
             }
       }
-      getConversations(); 
+      getConv(); 
       
       return () => {
           isMounted = false;
-          controller.abort();
       }
-    }, [axiosPrivate, currentUser._id, dispatch]); 
+    }, [currentUser._id, getConversations, dispatch]); 
     
     useEffect(() => {
       currentChat && handleSubmit();
@@ -102,8 +97,8 @@ const Messenger = () => {
     const temp = [...messages, arrivalMessage];
       arrivalMessage &&
         currentChat?.members.includes(arrivalMessage.sender) &&
-        dispatch(receiverMessageSuccess(temp));
-        dispatch(arrivalMessageSuccess(null));
+        dispatch(setReceiver(temp));
+        dispatch(setArrival(null));
     }, [arrivalMessage, currentChat, dispatch, messages]);
 
     return (

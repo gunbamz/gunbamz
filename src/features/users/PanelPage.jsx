@@ -1,8 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import useAxiosPrivate from "../hooks/useAxiosPrivate";
 import { NavLink, Outlet } from "react-router-dom";
-import { setMode } from "../redux/modeRedux";
+import { setMode } from "../../redux/modeRedux";
 import { BiSearch } from "react-icons/bi";
 import { FaClinicMedical } from "react-icons/fa";
 import { BiVial } from "react-icons/bi";
@@ -24,15 +23,11 @@ import { BiUser } from "react-icons/bi";
 import { BiHotel } from "react-icons/bi";
 import { BiChevronRight } from "react-icons/bi";
 import "./PanelPage.css";
-import { apiUsersSuccess } from "../redux/userRedux";
 
 const PanelPage = () => {
-   // const { users }  = useSelector((state) => state.user);
-    const axiosPrivate = useAxiosPrivate();
-    //const Navigate = useNavigate();
     const [isClose, setClose] = useState(false);
     const dispatch = useDispatch();
-    const { currentUser } = useSelector((state) => state.user);
+    const { currentUser } = useSelector((state) => state.auth);
     const handleChevronClick = () => {
         setClose(!isClose);
     }
@@ -45,30 +40,28 @@ const PanelPage = () => {
           setMode(temp)
         );
     };
-    //const location = useLocation();
-    useEffect(() => {
-        let isMounted = true;
-        const controller = new AbortController();
-        const getUsers = async () => {
-            try {
-                const response = await axiosPrivate.get("/users", {
-                    signal: controller.signal
-                });
-                isMounted && dispatch(
-                    apiUsersSuccess(response.data)
-                );
-            } catch (err) {
-                console.log(err.response);
-                //Navigate("/login", { replace: true });
-            }
-        }
-        getUsers(); 
+    // useEffect(() => {
+    //     let isMounted = true;
+    //     const controller = new AbortController();
+    //     const getUsers = async () => {
+    //         try {
+    //             const response = await axiosPrivate.get("/users", {
+    //                 signal: controller.signal
+    //             });
+    //             isMounted && dispatch(
+    //                 apiUsersSuccess(response.data)
+    //             );
+    //         } catch (err) {
+    //             console.log(err.response);
+    //         }
+    //     }
+    //     getUsers(); 
 
-        return () => {
-            isMounted = false;
-            controller.abort();
-        }
-    }, [axiosPrivate, dispatch]) 
+    //     return () => {
+    //         isMounted = false;
+    //         controller.abort();
+    //     }
+    // }, [axiosPrivate, dispatch]) 
     return (
         <div className="panel-wrapper">
             <nav className={isClose ? "sidebar close" : "sidebar"}>
@@ -114,7 +107,7 @@ const PanelPage = () => {
                                 <NavLink className={(navData) => navData.isActive ? "active" : "" } to="/panel/clinics">
                                     <BiPulse className="icon" />
                                     <span className="text nav-text">Clinics</span>
-                                 </NavLink>
+                                </NavLink>
                             </li>
 
                             <li className="nav-link">
@@ -133,7 +126,7 @@ const PanelPage = () => {
                                 <NavLink className={(navData) => navData.isActive ? "active" : "" } to="/panel/laboratory">
                                     <BiVial className="icon" />
                                     <span className="text nav-text">Laboratory</span>
-                                 </NavLink>
+                                </NavLink>
                             </li>
                             <li className="nav-link">
                                 <NavLink className={(navData) => navData.isActive ? "active" : "" } to="/panel/store">

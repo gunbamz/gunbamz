@@ -1,5 +1,5 @@
 //import { useState, useEffect } from "react";
-import Messenger from '../components/Messenger';
+import Messenger from '../features/messages/Messenger';
 import { BiChat } from 'react-icons/bi';
 import { setMessenger } from "../redux/modeRedux";
 import { useSelector, useDispatch } from "react-redux";
