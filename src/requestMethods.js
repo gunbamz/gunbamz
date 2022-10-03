@@ -17,6 +17,7 @@ export const userRequest = axios.create({
   headers: { 'Content-Type': 'application/json' },
   withCredentials: true,
 });
+
 export const refreshRequest = axios.create({
   baseURL: BASE_URL,
   headers: { 'Content-Type': 'application/json' },

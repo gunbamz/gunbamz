@@ -84,6 +84,10 @@
 {
     background: var(--hover-color);
 }
+.login__container button:disabled
+{
+    background: var(--primary-color);
+}
 .login__container .gender__details .gender__title
 {
     font-size: 20px;

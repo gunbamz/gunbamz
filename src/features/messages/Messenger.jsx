@@ -4,7 +4,10 @@ import ChatSearch from "./ChatSearch";
 import ChatCurrent from "./ChatCurrent";
 import ChatRecent from "./ChatRecent"; 
 import { io } from "socket.io-client";
-import { useMessageMutation } from './messageApiSlice';
+import {
+   useSendMessageMutation,
+   useGetConversationsMutation,
+   } from './messageApiSlice';
 import "./Messenger.css";
 import { useDispatch, useSelector } from "react-redux";
 import { setMessenger } from "../../redux/modeRedux";
@@ -12,10 +15,11 @@ import { setNewMessage, setOnlineUsers, setConversations, setReceiver, setArriva
 
 const Messenger = () => {
     const dispatch = useDispatch();
-    const { currentUser, users } = useSelector((state) => state.user);
-    const { arrivalMessage, senderCounter, currentChat, newMessage, messages }  = useSelector((state) => state.message);
+    const { currentUser } = useSelector((state) => state.auth);
+    const { arrivalMessage, senderCounter, currentChat, newMessage, messages } = useSelector((state) => state.message);
     const socket = useRef();
-    const [sendMessage, getConversations, { isLoading }] = useMessageMutation();
+    const [sendMessage, { isLoading }] = useSendMessageMutation();
+    const [getConversations] = useGetConversationsMutation();
     console.log(isLoading);
     const handleSubmit = useCallback(
       async (e) => {
@@ -24,7 +28,6 @@ const Messenger = () => {
           text: newMessage,
           conversationId: currentChat?._id,
         };
-        
         const receiverId = currentChat?.members.find(
           (member) => member !== currentUser._id
         );
@@ -45,6 +48,7 @@ const Messenger = () => {
     );
   
     useEffect(() => {
+      const users = [];
       socket.current = io("ws://localhost:5000", {
         withCredentials: true,
       });
@@ -67,7 +71,7 @@ const Messenger = () => {
               dispatch(setMessenger(false));
           }
       }
-    }, [currentUser._id, dispatch, users]);
+    }, [currentUser._id, dispatch]);
 
     useEffect(() => {
       let isMounted = true;

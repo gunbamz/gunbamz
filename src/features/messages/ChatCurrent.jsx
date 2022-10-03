@@ -1,14 +1,20 @@
 import { useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
-import { useMessageMutation } from './messageApiSlice';
+import {
+  useCreateConversationMutation,
+  useGetTwoConversationMutation,
+  useGetMessagesMutation
+  } from './messageApiSlice';
 import { useSelector, useDispatch } from "react-redux";
 import Message from "./Message";
 import { setSenderMessage, setCounter, setNewMessage, setCurrentChat } from "./messageSlice";
 
 
 const ChatCurrent = () => {
-  const [getMessages, getTwoConversation, createConversation, { isLoading }] = useMessageMutation();
-  console.log(isLoading);
+  const [createConversation] = useCreateConversationMutation();
+  const [getTwoConversation] = useGetTwoConversationMutation();
+  const [getMessages] = useGetMessagesMutation();
+  //console.log(isLoading);
   const scrollRef = useRef();
   const location = useLocation();
   const [text, setText] = useState("");

@@ -9,15 +9,9 @@ import { BiBellPlus } from "react-icons/bi";
 import { BiBook } from "react-icons/bi";
 import { BiCreditCard } from "react-icons/bi";
 import { BiFirstAid } from "react-icons/bi";
-//import { BiMessageRounded } from "react-icons/bi";
-//import { BiPlusMedical } from "react-icons/bi";
 import { BiPieChartAlt2 } from "react-icons/bi";
-//import { BiFemaleSign } from "react-icons/bi";
 import { BiLogOutCircle } from "react-icons/bi";
-//import { BiMoon } from "react-icons/bi";
-//import { BiSun } from "react-icons/bi";
 import { BiBandAid } from "react-icons/bi";
-//import { BiBed } from "react-icons/bi";
 import { BiPulse } from "react-icons/bi";
 import { BiUser } from "react-icons/bi";
 import { BiHotel } from "react-icons/bi";
@@ -36,32 +30,8 @@ const PanelPage = () => {
     }
     const modeHandler = (e) => {
         let temp = e.target.checked;
-        dispatch(
-          setMode(temp)
-        );
+        dispatch(setMode(temp));
     };
-    // useEffect(() => {
-    //     let isMounted = true;
-    //     const controller = new AbortController();
-    //     const getUsers = async () => {
-    //         try {
-    //             const response = await axiosPrivate.get("/users", {
-    //                 signal: controller.signal
-    //             });
-    //             isMounted && dispatch(
-    //                 apiUsersSuccess(response.data)
-    //             );
-    //         } catch (err) {
-    //             console.log(err.response);
-    //         }
-    //     }
-    //     getUsers(); 
-
-    //     return () => {
-    //         isMounted = false;
-    //         controller.abort();
-    //     }
-    // }, [axiosPrivate, dispatch]) 
     return (
         <div className="panel-wrapper">
             <nav className={isClose ? "sidebar close" : "sidebar"}>
@@ -85,7 +55,7 @@ const PanelPage = () => {
                             <input type="text" placeholder="Search..." />
                         </li>
                         <ul className="menu-links">
-                        <li className="nav-link">
+                            <li className="nav-link">
                                  <NavLink className={(navData) => navData.isActive ? "active" : "" } to="/panel/records">
                                     <BiBook className="icon" />
                                     <span className="text nav-text">Records</span>
@@ -109,7 +79,6 @@ const PanelPage = () => {
                                     <span className="text nav-text">Clinics</span>
                                 </NavLink>
                             </li>
-
                             <li className="nav-link">
                                  <NavLink className={(navData) => navData.isActive ? "active" : "" } to="/panel/wards">
                                     <BiHotel className="icon" />
@@ -144,13 +113,13 @@ const PanelPage = () => {
                                 <NavLink className={(navData) => navData.isActive ? "active" : "" } to="/panel/analytics">
                                    <BiPieChartAlt2 className="icon" />
                                    <span className="text nav-text">Analytics</span>
-                                 </NavLink>
+                                </NavLink>
                             </li>
                             <li className="nav-link">
                                 <NavLink className={(navData) => navData.isActive ? "active" : "" } to="/panel/profiles">
                                   <BiUser className="icon" />
                                   <span className="text nav-text">Profiles</span>
-                                 </NavLink>
+                                </NavLink>
                             </li>
                         </ul>
                     </div>

@@ -16,19 +16,19 @@ export const messageApiSlice = apiSlice.injectEndpoints({
                 body: data,
             })
         }),
-        getConversations: builder.query({
+        getConversations: builder.mutation({
             query: id => ({
                 url: `/conversations/${id}`,
                 method: 'GET',
             })
         }),
-        getTwoConversation: builder.query({
+        getTwoConversation: builder.mutation({
             query: param => ({
                 url: `/conversations/find/${param}`,
                 method: 'GET',
             })
         }),
-        getMessages: builder.query({
+        getMessages: builder.mutation({
             query: param => ({
                 url: `/messages/${param}`,
                 method: 'GET',
@@ -38,5 +38,9 @@ export const messageApiSlice = apiSlice.injectEndpoints({
 })
 
 export const {
-    useMessageMutation
+    useSendMessageMutation,
+    useCreateConversationMutation,
+    useGetConversationsMutation,
+    useGetTwoConversationMutation,
+    useGetMessagesMutation
 } = messageApiSlice;

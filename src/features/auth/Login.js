@@ -10,7 +10,6 @@ const Login = () => {
     const Navigate = useNavigate();
     const [formData, setFormData] = useState({});
     const [login, { isLoading }] = useLoginMutation();
-    console.log(isLoading);
     const handleInputChange = (e) => {
         const target = e.target;
         const value = target.type === 'checkbox' ? target.checked : target.value;
@@ -31,10 +30,6 @@ const Login = () => {
         } 
     };
 
-    // useEffect(() => {
-    //     dispatch(logOut()); 
-    // }, [dispatch]);
-
     return (
         <div className="login__container">
             <div className="title">Login</div>
@@ -50,7 +45,7 @@ const Login = () => {
                     </div>
                 </div>
                 <div className="button__wrapper">
-                    <button className='button' type="submit">Login</button>
+                    <button className='button' type="submit" disabled={isLoading}>Login</button>
                 </div>
             </form>
     </div>
