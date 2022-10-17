@@ -2,8 +2,8 @@
 
 # dependencies
 /node_modules
-/scr/assets/*
 /public/*
+/assets
 
 # testing
 /coverage
