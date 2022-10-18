@@ -3,12 +3,11 @@
     width: 100%;
     height: 92%;
 }
-/* ===== Sidebar  ===== */
+/* ===== Sidebar ===== */
 .sidebar {
     position: fixed;
-    top: 40px;
     left: 0;
-    height: 92%;
+    height: 96%;
     width: 250px;
     padding: 10px 14px;
     background: var(--sidebar-color);
@@ -27,7 +26,7 @@
     margin-top: 5px;
 }
 .sidebar header .image,
-.sidebar .icon{
+.sidebar .icon {
     min-width: 60px;
     border-radius: 6px;
 }
@@ -65,7 +64,10 @@
 
 .sidebar header .image-text{
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+
 }
 .sidebar header .logo-text{
     display: flex;
@@ -73,10 +75,10 @@
 }
 .sidebar header .logo-text-clip {
     display: inline-block;
-    width: 80px;
+    font-size: small;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    text-align: center;
+
 }
 .sidebar header .logo-text-clip:hover {
     overflow: visible;
@@ -88,9 +90,13 @@ header .image-text .name {
 }
 
 header .image-text .profession{
-    font-size: 16px;
+    display: inline-block;
+    font-size: medium;
+    font-weight: bold;
+    white-space: nowrap;
+    text-align: center;
     margin-top: -2px;
-    display: block;
+   
 }
 
 .sidebar header .image{
@@ -100,8 +106,8 @@ header .image-text .profession{
 }
 
 .sidebar header .image img{
-    width: 40px;
-    border-radius: 6px;
+    width: 90%;
+    border-radius: 50%;
 }
 
 .sidebar header .toggle{
@@ -129,30 +135,14 @@ div.dark__background .sidebar header .toggle{
 .sidebar.close .toggle{
     transform: translateY(-50%) rotate(0deg);
 }
+.sidebar .menu-bar{
+    margin-top: 10%;
+}
 
 .sidebar .menu{
     margin-top: 5px;
 }
 
-.sidebar li.search-box{
-    border-radius: 6px;
-    background-color: var(--primary-color-light);
-    cursor: pointer;
-    transition: var(--tran-05);
-}
-
-.sidebar li.search-box input{
-    height: 100%;
-    width: 100%;
-    outline: none;
-    border: none;
-    background-color: var(--primary-color-light);
-    color: var(--text-color);
-    border-radius: 6px;
-    font-size: 17px;
-    font-weight: 500;
-    transition: var(--tran-05);
-}
 .sidebar li a{
     list-style: none;
     height: 100%;
@@ -187,13 +177,11 @@ div.dark__background .sidebar li a:hover .text{
     color: var(--text-color);
 }
 
-.sidebar .menu-bar{
-    height: calc(100% - 60px);
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 5px;
-    justify-content: space-between;
-    overflow-y: scroll;
+.sidebar .lower-group{
+    margin-top: 20%;
+}
+.mode-text.text{
+    margin-left: 35%;
 }
 .menu-bar::-webkit-scrollbar{
     display: none;
@@ -223,10 +211,10 @@ div.dark__background .mode .sun-moon i.moon{
     opacity: 0;
 }
 
-.menu-bar .bottom-content .toggle-switch{
+.menu-bar .lower-group .toggle-switch{
     position: absolute;
-    right: 0;
-    height: 100%;
+    right: 42%;
+    height: 60px;
     min-width: 60px;
     display: flex;
     align-items: center;
@@ -266,9 +254,8 @@ div.dark__background .switch::before{
 
 .home{
     position: absolute;
-    top: 40px;
     left: 250px;
-    height: 93%;
+    height: 98%;
     padding: 0 10px;
     width: calc(100% - 250px);
     background-color: var(--body-color);
