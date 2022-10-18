@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/gunbamz/static/css/main.b221cdf2.css",
+    "main.js": "/gunbamz/static/js/main.9a353047.js",
+    "static/media/profile.jpg": "/gunbamz/static/media/profile.e5eee2b1c9901c95d3d5.jpg",
+    "index.html": "/gunbamz/index.html",
+    "main.b221cdf2.css.map": "/gunbamz/static/css/main.b221cdf2.css.map",
+    "main.9a353047.js.map": "/gunbamz/static/js/main.9a353047.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b221cdf2.css",
+    "static/js/main.9a353047.js"
+  ]
+}
