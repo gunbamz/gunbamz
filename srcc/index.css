@@ -1,20 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Harlow+Solid+Italic:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: "Open Sans";
-  font-weight: 400;
-}
 
-*, *::before, *::after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-::selection{
-  background-color: var(--primary-color);
-  color: #fff;
-}
 :root {
   width: 100vw;
   height: 100vh;
@@ -64,6 +49,10 @@ body {
   background-color: var(--color-sec1);
   height: 100vh;
 }
+::selection{
+  background-color: var(--primary-color);
+  color: #fff;
+}
 .flex__center {
   display: flex;
   justify-content: center;
@@ -72,6 +61,25 @@ body {
 .flex--column {
   width: 100%;
   flex-direction: column;
+}
+/* @font-face {
+  font-family: "Harlow";
+  src: local("Harlow"), url("./font/Harlow.woff") format("woff");
+  font-weight: bold;
+  font-display: swap;
+} */
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 a {

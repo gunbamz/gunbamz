@@ -1,0 +1,145 @@
+.chat__wrapper
+{
+    position: absolute;
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    right: 10px;
+    bottom: 50px;
+    width: 350px;
+    height: 550px;
+    border-radius: 6px;
+    background-color: var(--color-white);
+}
+.chat__wrapper .chat-links
+{
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    color: var(--color-white);
+}
+.chat__wrapper .chat-link
+{
+    width: 30%;
+    height: 27px;
+    list-style: none;
+    margin: 0px 3px;
+    border-radius: 2px;
+    background-color: var(--color-grey);
+    color: var(--color-black);
+}
+.chat__wrapper .chat-link a
+{
+    list-style: none;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: var(--tran-03);
+}
+.chat__wrapper .chat-links li:hover{
+    background-color: var(--color-gray);
+}
+.chat__wrapper .chat-link a.active
+{
+    background-color: var(--color-sec1);
+    color: var(--color-white);
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2px;
+  }
+  .messageTop{
+      display: flex;
+  }
+  
+  .messageImg {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .messageText{
+      padding: 1px auto;
+      border-radius: 5px;
+      background-color: #1877f2;
+      color: white;
+      max-width: 250px;
+  }
+  
+  .messageBottom{
+      font-size: 12px;
+      margin-top: 10px;
+  }
+  
+  .message.own{
+      align-items: flex-end;
+  }
+  
+  .message.own .messageText{
+      background-color: rgb(245, 241, 241);
+      color: black;
+  }
+
+  .chatBox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 3px 10px;
+  }
+  
+  .chatBoxTop {
+    position: absolute;
+    top: 0px;
+    left: px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 490px;
+    width: 97%;
+    overflow-y: auto;
+    padding: 3px 10px;
+  }
+  
+  .chatBoxBottom {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 26px;
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .chatMessageInput {
+    width: 80%;
+    height: 25px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .chatSubmitButton {
+    width: 20%;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color:var(--color-sec1);
+    color: white;
+  }
+  
