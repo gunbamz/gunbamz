@@ -4,6 +4,7 @@
 /node_modules
 /public/*
 /assets
+/srcc
 
 # testing
 /coverage
