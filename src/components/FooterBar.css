@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-sec1);
+    background-color: var(--color-footer);
 }
 .footer__text
 {

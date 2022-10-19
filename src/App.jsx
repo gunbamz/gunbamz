@@ -24,7 +24,7 @@ const App = () => {
     <div className={currentMode ? "app__wrapper dark__background" : "app__wrapper"}>
        <Router>
           <Routes>
-            <Route path="/*" element={<PanelPage /> }> 
+            <Route path="/" element={<PanelPage /> }> 
               <Route index element={<About />} />
               <Route path="about" element={<About />} />
               <Route path="qualifications" element={<Qualifications />} />
