@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/gunbamz/static/css/main.51299e7b.css",
-    "main.js": "/gunbamz/static/js/main.5d41cfcf.js",
+    "main.css": "/gunbamz/static/css/main.55f1fba2.css",
+    "main.js": "/gunbamz/static/js/main.5df13d14.js",
     "static/media/profile.jpg": "/gunbamz/static/media/profile.9c9dc516f365e028429a.jpg",
     "index.html": "/gunbamz/index.html",
-    "main.51299e7b.css.map": "/gunbamz/static/css/main.51299e7b.css.map",
-    "main.5d41cfcf.js.map": "/gunbamz/static/js/main.5d41cfcf.js.map"
+    "main.55f1fba2.css.map": "/gunbamz/static/css/main.55f1fba2.css.map",
+    "main.5df13d14.js.map": "/gunbamz/static/js/main.5df13d14.js.map"
   },
   "entrypoints": [
-    "static/css/main.51299e7b.css",
-    "static/js/main.5d41cfcf.js"
+    "static/css/main.55f1fba2.css",
+    "static/js/main.5df13d14.js"
   ]
 }
