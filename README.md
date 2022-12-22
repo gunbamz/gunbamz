@@ -1,23 +1,38 @@
-# Getting Started with Create React App
+#                      About Me
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Hello and Welcome 👋, I'm Muyiwa Ogunbameru
 
-## Available Scripts
+### I'm a Father, Developer, Mentor, and Aspiring Tech Innovator
+- 👨🏽‍🎓 I enjoy advancing my coding skills while earnestly re-searching the next paradigm that will impact positively to humanity.
+- 🌱 I am currently available for collaboration, remote or on-site.
+- 📚 I'm constantly learning new skills and rolling back tech frontiers
+- 🏆 Goal: Be the person I needed when I was younger
+- ⚡ Motto: _be humble, be kind, never stop learning_
 
-In the project directory, you can run:
+### 📺 Current SkillSet
+<!-- SKILLS:START -->
+- Html, CSS, JavaScript, TypeScript
+- Front End Frameworks: ReactJS, NextJS
+- Backend: NodeJS, Python
+- Scripting: Linux Bash, Shell, Docker, Kubernetes
+- Cloud Engineering: AWS Cloud Formation, CDK, Api Gateway, Lambda Functions, Amplify, EC2, ECS etc
+<!-- YOUTUBE:END -->
 
-### `npm start`
+### ✍️ HardCore Languages of Special Interest
+<!-- BLOG-POST-LIST:START -->
+- C++
+- Haskell
+- Golang
+- Rust
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 📬 Connect with me:
+<a href="https://twitter.com/MGunbamz">
+<img src="https://img.shields.io/badge/Twitter-blue" alt="Twitter Badge"/>
+</a>
+<a href="https://twitter.com/MGunbamz">
+<img src="https://img.shields.io/badge/LinkedIn-blue" alt="Twitter Badge"/>
+</a>
+<span>Email: muyiwaoluleye@yahoo.com | muyiwaoluleye06@gmail.com</span>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
+<br />
+<br />
