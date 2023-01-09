@@ -5,7 +5,7 @@
 ### I'm a Father, Developer, Mentor, and Aspiring Tech Innovator
 - 👨🏽‍🎓 I enjoy advancing my coding skills while earnestly re-searching the next paradigm that will impact positively to humanity.
 - 🌱 I am currently available for collaboration, remote or on-site.
-- 📚 I'm constantly learning new skills and rolling back tech frontiers
+- 📚 I'm constantly learning new skills and rolling back tech frontiers.
 - 🏆 Goal: Be the person I needed when I was younger
 - ⚡ Motto: _be humble, be kind, never stop learning_
 
