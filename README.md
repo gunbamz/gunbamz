@@ -17,7 +17,7 @@
 - Scripting: Linux Bash, Shell, Docker, Kubernetes
 - Cloud Engineering: AWS Cloud Formation, CDK, Api Gateway, Lambda Functions, Amplify, EC2, ECS, S3 etc
 
-### ✍️ HardCore Languages of Special Interest
+### ✍️ HardCore Languages of Special Interest:
 <!-- BLOG-POST-LIST:START -->
 - C++
 - Haskell
