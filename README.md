@@ -9,7 +9,7 @@
 - 🏆 Goal: Be the person I needed when I was younger.
 - ⚡ Motto: _be humble, be kind, never stop learning_
 
-### 📺 Current SkillSet
+### 📺 Current SkillSet:
 <!-- SKILLS:START -->
 - HTML, CSS, JavaScript, TypeScript.
 - Front End Frameworks: ReactJS, NextJS.
