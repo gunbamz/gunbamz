@@ -2,7 +2,7 @@
 
 ### Hello and Welcome 👋, I'm Muyiwa Ogunbameru
 
-### I'm a Father, Developer, Mentor, and Aspiring Tech Innovator
+### I'm a Father, Developer, Mentor, and Aspiring Tech Innovator.
 - 👨🏽‍🎓 I have a strong commitment to advance my coding skills while earnestly re-searching the next paradigm that will impact positively on humanity.
 - 🌱 I am currently available for collaboration, remote or on-site.
 - 📚 I'm constantly learning new skills and rolling back tech frontiers.
