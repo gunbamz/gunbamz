@@ -4,7 +4,7 @@
 
 ### I'm a Father, Developer, Mentor, and Aspiring Tech Innovator.
 - 👨🏽‍🎓 I have a strong commitment to advance my coding skills while earnestly re-searching the next paradigm that will impact positively on humanity.
--  👨🏽‍🎓 I am constantly exploring how Tech innovations can help protect the vulnerable from the ruthless Maria's diverse sectors, including health-care. 
+-  👨🏽‍🎓 I am constantly exploring how Tech innovations can help protect the vulnerable from the ruthless mafias in diverse sectors, including health-care. 
 - 🌱 I am currently available for collaboration, remote or on-site.
 - 📚 I'm constantly learning new skills and rolling back tech frontiers.
 - 🏆 Goal: Be the person I needed when I was younger.
