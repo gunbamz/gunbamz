@@ -12,7 +12,7 @@
 
 ### 📺 Current SkillSet:
 <!-- SKILLS -->
-- HTML, CSS, JavaScript, TypeScript, and webGL.
+- HTML, CSS, JavaScript, TypeScript, webGL.
 - Front End Frameworks: ReactJS, NextJS.
 - Backend: NodeJS, Python.
 - Scripting: Linux Bash, Shell, good exposure to Docker, and container orchestration tools like Kubernetes
