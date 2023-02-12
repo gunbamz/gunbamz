@@ -15,6 +15,7 @@
 - HTML5, CSS3, JavaScript, TypeScript, webGL.
 - Front End Frameworks: ReactJS, NextJS.
 - Backend: NodeJS, Python.
+- Data Persistence: MongoDB, PostgresQL and Mysql.
 - Scripting: Linux Bash, Shell, good exposure to Docker, and container orchestration tools like Kubernetes
 - Cloud Engineering: AWS Cloud Formation, CDK, Api Gateway, Lambda Functions, Amplify, EC2, ECS, S3 etc
 
