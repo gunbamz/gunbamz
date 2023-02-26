@@ -17,7 +17,7 @@
 - Backend: NodeJS, Python.
 - Data Persistence: MongoDB, PostgresQL and Mysql.
 - Scripting: Linux Bash, Shell, good exposure to Docker, and container orchestration tools like Kubernetes
-- Cloud Engineering: AWS Cloud Formation, CDK, Api Gateway, Lambda Functions, Amplify, EC2, ECS, S3 etc
+- Cloud Engineering: AWS cloud formation, CDK, Api Gateway, Lambda Functions, Amplify, EC2, ECS, S3 etc
 
 ### ✍️ HardCore Languages of Special Interest:
 <!-- Languages  -->
