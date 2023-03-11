@@ -20,7 +20,7 @@
 - Cloud Engineering: AWS cloud formation, CDK, Api Gateway, Lambda Functions, Amplify, EC2, ECS, S3 etc
 
 ### ✍️ HardCore Languages of Special Interest:
-<!-- Languages -->
+<!-- Languages  -->
 - Python
 - Cpp
 - Haskell
