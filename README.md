@@ -22,7 +22,7 @@
 ### ✍️ HardCore Languages of Special Interests:
 <!-- Languages  -->
 - Python3
-- Cpp
+- C++
 - Haskell
 - Go
 - Rust
