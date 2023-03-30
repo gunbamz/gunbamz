@@ -12,7 +12,7 @@
 
 ### 📺 Current Skillset
 <!-- SKILLS -->
-- HTML5, CSS3, JavaScript, TypeScript, webGL.
+- HTML5, CSS3, Javascript, TypeScript, webGL.
 - Front End Frameworks: ReactJS, NextJs.
 - Backend: NodeJS, Python.
 - Data Persistence: MongoDB, Postgresql and Mysql.
