@@ -12,7 +12,7 @@
 
 ### 📺 Current Skillset
 <!-- SKILLS -->
-- HTML5, CSS3, Javascript, TypeScript, webGL.
+- HTML, CSS, Javascript, TypeScript, webGL.
 - Front End Frameworks: ReactJS, NextJs.
 - Backend: NodeJS, Python3.
 - Data Persistence: MongoDB, Postgresql and Mysql.
@@ -22,7 +22,7 @@
 ### ✍️ HardCore Languages of Special Interests:
 <!-- Languages  -->
 - Python
-- C++
+- Cpp
 - Haskell
 - GoLang
 - Rust
