@@ -11,7 +11,7 @@
 - ⚡ Motto: _be humble, be kind, never stop learning!_
 
 ### 📺 Current Skillset
-<!-- SKILLS -->
+<!-- SKILLSET-->
 - HTML, CSS, Javascript, TypeScript, webGL.
 - Front-end Frameworks: ReactJS, NextJs.
 - Backend: NodeJS, Python3(including machine learning and NLP).
