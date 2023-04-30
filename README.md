@@ -23,7 +23,7 @@
 <!-- Languages  -->
 - Python
 - C++
-- Haskell
+- Haskell and Plutus
 - GoLang
 - Rust and Cargo
 
