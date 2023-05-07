@@ -24,7 +24,7 @@
 - Python 3
 - Cpp
 - Haskell and Plutus
-- GoLang
+- Golang
 - Rust and Cargo
 
 ### 📬 Connect with me:
