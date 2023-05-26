@@ -16,7 +16,7 @@
 - Front-end Frameworks: ReactJS, NextJs.
 - Backend: NodeJS(express) including serverless frameworks Python3, flask and django(including machine learning and NLP).
 - Data Persistence: MongoDB, Postgresql, SQL and Mysql.
-- Scripting: Linux Bash and Shell, good exposure to Docker, and container orchestration tools like Kubernetes
+- Scripting: Linux Bash and Shell, good exposure to Docker, container orchestration tools like Kubernetes
 - Cloud Engineering: AWS Cloud Formation, CDK, Api Gateway, Lambda Functions, Amplify, EC2, ECS, S3 etc
 
 ### ✍️ Languages of Special Interests:
