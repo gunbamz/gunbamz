@@ -22,7 +22,7 @@
 ### ✍️ Languages of Special Interests:
 <!-- Languages-->
 - Python3
-- Cpp
+- C++
 - Haskell and Plutus
 - Golang
 - Rust and Cargo
