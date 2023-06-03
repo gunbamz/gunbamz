@@ -25,7 +25,7 @@
 - C++
 - Haskell and Plutus
 - Golang
-- Rust and Cargo
+- Rust and Cargo package manager
 
 ### 📬 Connect with me:
 <a href="https://twitter.com/MGunbamz">
