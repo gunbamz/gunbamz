@@ -19,7 +19,7 @@
 - Scripting: Linux Bash and Shell, good exposure to Docker, container orchestration tools like Kubernetes
 - Cloud Engineering: AWS Cloud Formation, CDK, Api Gateway, Lambda Functions, Amplify, EC2, ECS, S3 etc
 
-### ✍️ Languages of Special Interests:
+### ✍️ Languages of Interests:
 <!-- Languages-->
 - Python3
 - C++
