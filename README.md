@@ -1,6 +1,6 @@
 #                      About Me
 
-### Hello and Welcome! 👋, I am Muyiwa Ogunbameru
+### Hello and Welcome! 👋, I'm Muyiwa Ogunbameru
 
 ### I am a Father, Husband, Developer, Mentor, and Aspiring Tech Innovator.
 - 👨🏽‍🎓 I have a strong commitment to advance my coding skills while earnestly re-searching the next paradigm that will impact positively on humanity.
