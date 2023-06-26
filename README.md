@@ -7,7 +7,7 @@
 -  👨🏽‍🎓 I'm currently exploring how Tech innovations can help protect the vulnerable and perhaps, improve health-care accessibility for the under-served.
 - 🌱 I'm currently available for collaboration, remote or on-site.
 - 📚 I'm passionate about learning new skills and rolling back tech frontiers.
-- 🏆 Goal: Be the person I needed when I was younger.
+- 🏆 Goal: To be the person I needed when I was younger.
 - ⚡ Motto: _be humble, be kind, never stop learning!_
 
 ### 📺 Current Skills
