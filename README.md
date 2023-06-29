@@ -5,7 +5,7 @@
 ### I'm a Father, Husband, Developer, Mentor, and Aspiring Tech Innovator.
 - 👨🏽‍🎓 I have strong commitment to advance my coding skills while earnestly re-searching the next paradigm that will impact positively on humanity.
 -  👨🏽‍🎓 I'm currently exploring how Tech innovations can help protect the vulnerable and perhaps, improve health-care accessibility for the under-served.
-- 🌱 I am currently available for collaboration, remote or on-site.
+- 🌱 I'm currently available for collaboration, remote or on-site.
 - 📚 I'm passionate about learning new skills and rolling back tech frontiers.
 - 🏆 Goal: To be the person I needed when I was younger.
 - ⚡ Motto: _be humble, be kind, never stop learning!_
