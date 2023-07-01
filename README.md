@@ -23,7 +23,7 @@
 <!-- Languages-->
 - Python3
 - C++
-- Haskell and Plutus
+- Haskell, Plutus Framework
 - Golang
 - Rust and Cargo package manager
 
