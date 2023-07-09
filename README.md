@@ -12,7 +12,7 @@
 
 ### 📺 Current Skills
 <!--Skills-->
-- HTML, CSS, Javascript, TypeScript, webGL.
+- HTML5, CSS3, Javascript, TypeScript, webGL.
 - Front-end Frameworks: ReactJS, NextJs, Redux, Zustard, Vuejx and CMS like drupal, word press
 - Backend: NodeJS(express, including serverless frameworks), Python, flask, django and also machine learning and NLP frameworjs in python).
 - Data Persistence: MongoDB, Postgresql, SQL and Mysql.
