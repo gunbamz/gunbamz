@@ -11,7 +11,7 @@
 - ⚡ Motto: _be humble, be kind, never stop learning!_
 
 ### 📺 Current Skills
-<!--Skills-->
+<!--Skills -->
 - HTML5, CSS3, Javascript, TypeScript, webGL.
 - Front-end Frameworks: ReactJS, NextJs, Redux, Zustard, Vuejx and CMS like drupal, word press
 - Backend: NodeJS(express, including serverless frameworks), Python, flask, django and also machine learning and NLP frameworjs in python).
