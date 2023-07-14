@@ -22,7 +22,7 @@
 ### ✍️ Languages of Interests:
 <!--Languages-->
 - Python
-- C++
+- Cpp
 - Haskell, Plutus Framework
 - Golang
 - Rust and Cargo package manager
