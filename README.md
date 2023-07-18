@@ -24,7 +24,7 @@
 - Python
 - C++
 - Haskell
-- Go
+- Golang
 - Rust and Cargo package manager
 
 ### 📬 Connect with me:
