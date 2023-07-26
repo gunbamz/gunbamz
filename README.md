@@ -25,7 +25,7 @@
 - C++
 - Haskell
 - Golang
-- Rust and cargo
+- Rust
 
 ### 📬 Connect with me:
 <a href="https://twitter.com/MGunbamz">
