@@ -24,7 +24,7 @@
 - Python
 - C++
 - Haskell
-- Golang and Cargo tooling
+- Golang
 - Rust
 
 ### 📬 Connect with me:
