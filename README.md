@@ -24,7 +24,7 @@
 - Python
 - Cpp
 - Haskell n plutus
-- Golang
+- Go 
 - Rust
 
 ### 📬 Connect with me:
