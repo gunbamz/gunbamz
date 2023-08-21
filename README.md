@@ -21,7 +21,7 @@
 
 ### ✍️ Languages of Interests:
 <!-- Languages -->
-- Python
+- Python lang
 - C++
 - Haskell n plutus
 - Golang
