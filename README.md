@@ -23,7 +23,7 @@
 <!-- Languages -->
 - Python
 - Cpp
-- Haskell n plutus
+- Haskell
 - Golang
 - Rust
 
