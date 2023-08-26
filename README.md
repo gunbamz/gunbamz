@@ -25,7 +25,7 @@
 - C++
 - Haskell
 - Golang
-- Rust
+- Rust lang
 
 ### 📬 Connect with me:
 <a href="https://twitter.com/MGunbamz">
