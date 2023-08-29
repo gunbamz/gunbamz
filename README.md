@@ -24,7 +24,7 @@
 - Python
 - C++
 - Haskell
-- Go
+- Golang
 - Rust lang
 
 ### 📬 Connect with me:
