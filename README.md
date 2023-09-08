@@ -22,7 +22,7 @@
 ### ✍️ Languages of Interests:
 <!-- Languages -->
 - Python
-- C++
+- Cpp
 - Haskell
 - Golang
 - Rust lang
