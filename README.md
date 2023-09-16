@@ -21,8 +21,8 @@
 
 ### ✍️ Languages of Interests:
 <!-- Languages -->
-- Python3
-- C++
+- Python
+- Cpp
 - Haskell
 - Golang
 - Rust lang
