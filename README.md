@@ -35,5 +35,4 @@
 <img src="https://img.shields.io/badge/LinkedIn-blue" alt="Twitter Badge"/>
 </a>
 <span> Email: muyiwaoluleye@yahoo.com | muyiwaoluleye06@gmail.com</span>
-
 <br />
