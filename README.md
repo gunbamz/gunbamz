@@ -26,6 +26,7 @@
 - Haskell
 - Golang
 - Rust
+- R
 
 ### 📬 Connect with me:
 <a href="https://twitter.com/MGunbamz">
