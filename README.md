@@ -14,7 +14,7 @@
 <!-- My Skills. -->
 - HTML5, CSS3, Javascript, TypeScript, webGL.
 - Front-end Frameworks: ReactJs, NextJs, Redux, Zustard, Vuejx and CMS like drupal, word press
-- Backend: NodeJS and express, serverless frameworks, PHP, Python, flask, django and also machine learning and NLP frameworks in python.
+- Backend: NodeJS n express, serverless frameworks, PHP, Python, flask, django and also machine learning and NLP frameworks in python.
 - Data Persistence: MongoDB, Postgresql, SQL and Mysql.
 - Scripting: Linux Bash and Shell, good exposure to Docker, container orchestration tools like Kubernetes
 - Cloud Engineering: AWS Cloud Formation, CDK, Api Gateway, Lambda Functions, Amplify, EC2, ECS, S3 etc
