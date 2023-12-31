@@ -23,6 +23,7 @@
 <!-- Languages-->
 - Python
 - C++
+- C
 - Haskell
 - Golang
 - Rust
