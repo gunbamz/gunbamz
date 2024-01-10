@@ -1,4 +1,4 @@
-1#                      About Me
+ÿ1#                      About Me
 -
 ### Hello and Welcome! 👋, I'm Muyiwa Ogunbameru
 
@@ -29,7 +29,7 @@
 - Rust
 - R
 
-### 📬 Connect with me:
+### 📬 Connect with. me:
 <a href="https://twitter.com/MGunbamz">
 <img src="https://img.shields.io/badge/Twitter-blue" alt="Twitter Badge"/>
 </a>
