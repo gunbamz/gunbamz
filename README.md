@@ -1,6 +1,6 @@
 ÿ1#                      About Me
 -
-### Hello and Welcome! 👋, I'm Muyiwa Ogunbameru
+### Hello and Welcome!👋, I'm Muyiwa Ogunbameru
 
 ### I'm a retired Oral Surgeon, a Father, Husband, Developer, Mentor, and Aspiring Tech Innovator.
 - 👨🏽‍🎓 I have strong commitment to advancing my codinghe next paradigm that will impact positively on humanity.
