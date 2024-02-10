@@ -1,5 +1,5 @@
-ÿ1#                      About Me
--
+#                      About Me
+
 ### Hello and Welcome!👋, I'm Muyiwa Ogunbameru
 
 ### I'm a retired Oral Surgeon, a Father, Husband, Developer, Mentor, and Aspiring Tech Innovator.
