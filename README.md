@@ -21,7 +21,7 @@
 
 ### ✍️ Languages of Interests:
 <!-- Languages -->
-- Python3
+- Python
 - C++
 - C
 - Haskell
