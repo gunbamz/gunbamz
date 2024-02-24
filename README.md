@@ -25,7 +25,7 @@
 - C++
 - C
 - Haskell
-- Golang
+- Go
 - Rust
 - R
 
