@@ -8,7 +8,7 @@
 - 🌱 I am currently available for collaboration, remote or on-site.
 - 📚 I'm passionate about learning new skills and rolling back tech frontiers.
 - 🏆 Goal: To be the person I needed when I was younger.
-- ⚡ Motto: _be humble, be kind, never stop learning_
+- ⚡ Motto: _be humble, be  kind, never stop learning_
 
 ### 📺 Current Skills
 <!-- Skills -->
