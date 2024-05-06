@@ -25,7 +25,7 @@
 - C++
 - Cee
 - Haskell
-- Go
+- Golang
 - Rust
 - R
 
