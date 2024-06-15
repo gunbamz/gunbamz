@@ -22,12 +22,12 @@
 ### ✍️ Languages of Interests:
 <!-- Languages -->
 - Python
+- R
 - C++
 - Cee
 - Haskell
 - Golang
-- Rust
-- R
+- Rust 
 
 ### 📬 Connect with me:
 <a href="https://twitter.com/MGunbamz">
