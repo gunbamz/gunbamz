@@ -2,7 +2,7 @@
 
 ### Hello and Welcome!👋, I'm Muyiwa Ogunbameru
 
-### I am a retired Oral Surgeon, a Father, Husband, Developer, Mentor, and Aspiring Tech Innovator.
+### I'm a retired Oral Surgeon, a Father, Husband, Developer, Mentor, and Aspiring Tech Innovator.
 - 👨🏽‍🎓 I have strong commitment to advancing my coding skills while focussing on the next paradigm that could impact positively on humanity.
 -  👨🏽‍🎓 I'm currently exploring how Tech innovations can help protect the vulnerable and perhaps, improve health-care accessibility for the under-served.
 - 🌱 I am currently available for collaboration, remote or on-site.
