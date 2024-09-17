@@ -24,7 +24,7 @@
 - Python
 - R 
 - C++
-- Cee
+- C
 - Haskell
 - Golang
 - Rust 
