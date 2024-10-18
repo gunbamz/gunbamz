@@ -1,6 +1,6 @@
 #                      About Me
 
-### Hello and Welcome!👋, I am Abiodun Ogunbameru
+### Hello and Welcome!👋, I'm Abiodun Ogunbameru
 
 ### I am a retired Oral Surgeon, a Father, Husband, Developer, Mentor, and Aspiring Tech Innovator.
 - 👨🏽‍🎓 I have strong commitment to advancing my coding skills while focussing on the next paradigm that could impact positively on humanity.
