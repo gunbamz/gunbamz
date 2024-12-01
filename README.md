@@ -4,7 +4,7 @@
 
 ### I am a retired Oral Surgeon,  a Father, Husband, Developer, Mentor, and Aspiring Tech Innovator.
 - 👨🏽‍🎓 I have strong commitment to advancing my coding skills while focussing on the next paradigm that could impact positively on humanity.
--  👨🏽‍🎓 I'm currently exploring how Tech innovations can help protect the vulnerable and perhaps, improve health-care accessibility for the under-served.
+-  👨🏽‍🎓 I am currently exploring how Tech innovations can help protect the vulnerable and perhaps, improve health-care accessibility for the under-served.
 - 🌱 I'm currently available for collaboration, remote or on-site.
 - 📚 I am passionate about learning new skills and rolling back tech frontiers.
 - 🏆 Goal: To be the person I needed when I was younger.
