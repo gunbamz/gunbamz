@@ -10,7 +10,7 @@
 - 🏆 Goal: To be the person I needed when I was younger.
 - ⚡ Motto: _be humble, be kind, never stop learnin.
 
-### 📺 Current Skills
+### 📺 Current  Skills
 <!-- Skills -->
 - HTML5, CSS4, Javascript, TypeScript, webGL.
 - Frontend Frameworks: ReactJs, NextJs, Redux, Wix, Zustard, Vuejx and CMS like drupal, word press
